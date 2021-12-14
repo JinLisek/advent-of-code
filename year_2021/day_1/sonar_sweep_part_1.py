@@ -1,7 +1,7 @@
 from typing import Sequence
 
 
-def sonar_sweep(measurements: Sequence[int]) -> int:
+def sonar_sweep_part_1(measurements: Sequence[int]) -> int:
     previous_meas = None
     num_of_depth_increases = 0
 
@@ -15,8 +15,7 @@ def sonar_sweep(measurements: Sequence[int]) -> int:
 def main() -> None:
     with open(file="depth_measurements.txt", mode="r", encoding="utf-8") as f:
         measurements = list(map(int, f.read().split()))
-
-    print(sonar_sweep(measurements=measurements))
+    print(sonar_sweep_part_1(measurements=measurements))
 
 
 if __name__ == "__main__":
