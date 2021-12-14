@@ -36,6 +36,8 @@ def test_given_measurements_sonar_sweep_part_1should_return_value(
         (1, [1, 1, 1, 2, 1]),
         (1, [1, 1, 1, 1, 2]),
         (2, [1, 1, 1, 2, 2]),
+        (2, [1, 1, 1, 2, 1, 2]),
+        (3, [1, 1, 1, 2, 3, 4]),
     ],
 )
 def test_given_measurements_sonar_sweep_part_2_should_return_value(
